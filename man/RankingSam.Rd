@@ -66,6 +66,7 @@ RankingSam(x, y, type = c("unpaired", "paired", "onesample"), pvalues = TRUE, ge
           \link{RankingPermutation}}
 \keyword{univar}
 \examples{
+\donttest{
 ### Load toy gene expression data
 data(toydata)
 ### class labels
@@ -74,4 +75,5 @@ yy <- toydata[1,]
 xx <- toydata[-1,]
 ### run RankingSam
 sam <- RankingSam(xx, yy, type="unpaired")
+}
 }

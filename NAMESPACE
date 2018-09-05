@@ -10,7 +10,7 @@ importFrom(stats, cor, hclust, heatmap, IQR, lowess, mad, median,
            model.matrix, pf, pnorm, psignrank, pwilcox, quantile,
            rnorm, sd, var)
 
-importFrom(samr,samr)
+#importFrom(samr,samr)
 useDynLib(GeneSelector)
 
 exportClasses("GeneRanking", "FoldMatrix", "BootMatrix", "RepeatedRanking",
@@ -21,7 +21,8 @@ exportClasses("GeneRanking", "FoldMatrix", "BootMatrix", "RepeatedRanking",
 exportMethods("show", "summary", "toplist", "plot", "SelectedGenes", 
               "RankingBaldiLong",
               "RankingEbam", "RankingFC", "RankingFoxDimmic", "RankingLimma", "RankingPermutation",
-              "RankingSam", "RankingShrinkageT", "RankingSoftthresholdT",
+              #"RankingSam", 
+              "RankingShrinkageT", "RankingSoftthresholdT",
               "RankingTstat", "RankingWelchT", "RankingWilcEbam", "RankingWilcoxon",
               "GenerateFoldMatrix", "GenerateBootMatrix",
               "RepeatRanking", "GetStabilityOverlap", "GetStabilityDistance", "GetStabilityUnion", 
